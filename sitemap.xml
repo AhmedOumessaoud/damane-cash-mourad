@@ -35,6 +35,8 @@
   <url><loc>http://localhost:4173/services/details/telecom-adsl.html</loc></url>
   <url><loc>http://localhost:4173/services/details/telecom-lost-number.html</loc></url>
   <url><loc>http://localhost:4173/services/details/telecom-other-telecom.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/telecom-taxes.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/telecom-jawaz.html</loc></url>
   <url><loc>http://localhost:4173/services/details/insurance-car.html</loc></url>
   <url><loc>http://localhost:4173/services/details/insurance-motorcycle.html</loc></url>
   <url><loc>http://localhost:4173/services/details/insurance-truck.html</loc></url>
@@ -73,6 +75,8 @@
   <url><loc>http://localhost:4173/services/details/administration-printing.html</loc></url>
   <url><loc>http://localhost:4173/services/details/administration-scan.html</loc></url>
   <url><loc>http://localhost:4173/services/details/administration-supplies.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/administration-social-support.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/administration-teaching-contests.html</loc></url>
   <url><loc>http://localhost:4173/services/details/gaming-pubg.html</loc></url>
   <url><loc>http://localhost:4173/services/details/gaming-free-fire.html</loc></url>
   <url><loc>http://localhost:4173/services/details/gaming-fortnite.html</loc></url>
@@ -92,6 +96,7 @@
   <url><loc>http://localhost:4173/services/details/travel-bus-info.html</loc></url>
   <url><loc>http://localhost:4173/services/details/travel-booking.html</loc></url>
   <url><loc>http://localhost:4173/services/details/travel-travel-info.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/travel-markoub.html</loc></url>
   <url><loc>http://localhost:4173/services/details/cnss-deposit.html</loc></url>
   <url><loc>http://localhost:4173/services/details/cnss-prepare.html</loc></url>
   <url><loc>http://localhost:4173/services/details/cnss-forms.html</loc></url>
@@ -139,6 +144,8 @@
   <url><loc>http://localhost:4173/fr/services/details/telecom-adsl.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/telecom-lost-number.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/telecom-other-telecom.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/telecom-taxes.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/telecom-jawaz.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/insurance-car.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/insurance-motorcycle.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/insurance-truck.html</loc></url>
@@ -177,6 +184,8 @@
   <url><loc>http://localhost:4173/fr/services/details/administration-printing.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/administration-scan.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/administration-supplies.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/administration-social-support.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/administration-teaching-contests.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/gaming-pubg.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/gaming-free-fire.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/gaming-fortnite.html</loc></url>
@@ -196,6 +205,7 @@
   <url><loc>http://localhost:4173/fr/services/details/travel-bus-info.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/travel-booking.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/travel-travel-info.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/travel-markoub.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/cnss-deposit.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/cnss-prepare.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/cnss-forms.html</loc></url>
