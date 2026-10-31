@@ -1,0 +1,6 @@
+output/
+preview-*.png
+qa.cjs
+*.backup.txt
+assets/generated-sources.json
+assets/hq-generated-sources.json

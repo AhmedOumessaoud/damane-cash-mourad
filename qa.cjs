@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+const {chromium}=require(process.env.DAMANE_PLAYWRIGHT_PATH||'playwright');
+const data={};data.window=data;vm.createContext(data);vm.runInContext(fs.readFileSync('js/data.js','utf8'),data);
+(async()=>{
+ for(const service of data.SERVICES){const html=fs.readFileSync(`services/details/${service.id}.html`,'utf8');assert.ok(html.includes(`<h1 dir="auto">${service.title}</h1>`));assert.ok(!html.includes('<dialog'));assert.ok(!html.includes('data-service='));assert.ok(html.includes(encodeURIComponent(service.title)));}
+ const browser=await chromium.launch({channel:'msedge',headless:true}),page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://127.0.0.1:4173');await page.locator('.insurance-band .preview-card.car').click();assert.ok(page.url().endsWith('/services/details/insurance-car.html'));assert.equal(await page.locator('dialog').count(),0);assert.equal(await page.locator('h1').textContent(),'\u062a\u0623\u0645\u064a\u0646 \u0627\u0644\u0633\u064a\u0627\u0631\u0627\u062a');
+ await page.goto('http://127.0.0.1:4173/services/insurance.html');await page.locator('.detail-card.car .detail-card-top').scrollIntoViewIfNeeded();const cardImage=await page.locator('.detail-card.car .detail-card-top').boundingBox();await page.mouse.click(cardImage.x+cardImage.width/2,cardImage.y+cardImage.height/2);await page.waitForURL('**/details/insurance-car.html');assert.ok(page.url().endsWith('/services/details/insurance-car.html'));
+ await page.goto('http://127.0.0.1:4173/services/insurance.html#insurance-car');await page.waitForURL('**/details/insurance-car.html');
+ await page.goto('http://127.0.0.1:4173/services/insurance.html');await page.locator('#service-search').fill('voiture');assert.equal(await page.locator('.detail-card:visible').count(),1);
+ const targets=['insurance-car','gaming-pubg','cnss-deposit','finance-offers','administration-cv','transfer-western-union'];
+ fs.mkdirSync('output/navigation',{recursive:true});
+ for(const id of targets){await page.goto(`http://127.0.0.1:4173/services/details/${id}.html`);await page.evaluate(async()=>{await document.fonts.ready;await Promise.allSettled([...document.images].map(i=>{i.loading='eager';return i.decode()}))});assert.deepEqual(await page.locator('img').evaluateAll(imgs=>imgs.filter(i=>!i.naturalWidth).map(i=>i.src)),[]);for(const width of [320,390,743,1440]){await page.setViewportSize({width,height:900});assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`${id} ${width}`);}if(id==='insurance-car'){await page.screenshot({path:'output/navigation/car-desktop.png',fullPage:true});await page.setViewportSize({width:390,height:844});await page.screenshot({path:'output/navigation/car-mobile.png',fullPage:true});}}
+ assert.deepEqual(errors,[]);await browser.close();console.log('PASS: 93 standalone pages, no dialogs, homepage/card navigation, old hash redirect, search, images, 4 viewports, no JS errors.');
+})().catch(e=>{console.error(e);process.exit(1)});

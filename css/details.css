@@ -1,0 +1,18 @@
+.detail-card{position:relative}
+.detail-card .detail-trigger::after{content:'';position:absolute;inset:0;border-radius:inherit}
+.detail-card .card-wa{position:relative;z-index:2}
+.detail-card:has(.detail-trigger:focus-visible){outline:3px solid var(--gold);outline-offset:4px}
+.individual-illustration{background:radial-gradient(ellipse at center,#f4faff,#d5e7fa);border-radius:60px 12px 60px 12px}
+.individual-illustration img{object-fit:contain;padding:22px;box-shadow:none}
+.individual-service-hero .breadcrumbs{flex-wrap:wrap;line-height:1.7}
+.service-information{padding-block:40px}
+.service-information-panel{padding:36px;background:linear-gradient(145deg,#fff,#f5faff);border:1px solid #d4e4f7;border-radius:26px;box-shadow:var(--shadow)}
+.service-information-panel h2{font-size:29px;margin-bottom:16px}
+.service-information-panel>p{font-size:15px;color:var(--muted)}
+.enquiry-topics{list-style:none;margin:25px 0;padding:0;display:grid;gap:12px}
+.enquiry-topics li{display:flex;align-items:center;gap:14px;background:#edf6ff;padding:15px 18px;border-radius:13px;font-size:14px;font-weight:700}
+.enquiry-topics .icon{width:25px;height:28px}
+.service-information-panel .category-note{margin:24px 0}
+.service-return-links{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){.service-information{padding-block:28px}.service-information-panel{padding:25px;border-radius:22px}.service-information-panel h2{font-size:26px}.service-information-panel>p{font-size:13px}.enquiry-topics li{font-size:12px;padding:13px;gap:10px}}
+@media(max-width:540px){.service-information-panel{padding:22px 18px}.service-information-panel h2{font-size:25px}.service-information-panel .actions{display:grid;grid-template-columns:1fr}.service-information-panel .button{width:100%}.enquiry-topics .icon{width:22px;height:24px}.individual-illustration img{padding:15px}.service-return-links{gap:5px}.service-return-links .return-home{font-size:11px}.individual-service-hero h1{font-size:32px}}

@@ -1,0 +1,126 @@
+/* Shared content. Offers and availability must be confirmed by the agency. */
+window.BUSINESS={name:'ضمان كاش مراد',latin:'DAMANE CASH MOURAD',phone:'0634038743',international:'212634038743',email:'damanecashdkhissa@gmail.com',location:'الدخيسة – مكناس',maps:'https://www.google.com/maps/search/?api=1&query=Damane+Cash+Mourad+Dkhissa+Meknes'};
+window.CATEGORIES=[
+ {id:'transfer',slug:'money-transfer',title:'تحويل الأموال',heading:'خدمات تحويل الأموال',pageTitle:'خدمات تحويل الأموال داخل المغرب وخارجه',icon:'transfer',image:'transfer',intro:'إرسال واستقبال الأموال بسهولة عبر مختلف خدمات التحويل. نسعد بمساعدتكم في الاستفسار عن الخدمة المناسبة داخل المغرب وخارجه.',note:'توفر الشبكات وشروط التحويل يُؤكد مباشرة مع الوكالة. لا يعرض الموقع أسعار صرف أو رسوماً مباشرة.',topics:['شبكة التحويل والوجهة المطلوبة','شروط الإرسال أو الاستقبال والوثائق المطلوبة','الرسوم وطريقة الاستلام حسب الخدمة'],items:[
+ ['western-union','Western Union','Western Union transfert argent','transfer','استفسر عن إرسال واستقبال الأموال عبر Western Union، والوجهات والوثائق المطلوبة.','شبكات التحويل','western-union'],
+ ['ria','Ria Money Transfer','Ria transfert argent','transfer','تعرف لدى الوكالة على خدمات Ria المتاحة وشروط إرسال الأموال أو استقبالها.','شبكات التحويل','ria'],
+ ['moneygram','MoneyGram','MoneyGram transfert','transfer','استفسر عن خدمة MoneyGram وإمكانية الاستقبال أو التحويل للوجهة المطلوبة.','شبكات التحويل','moneygram'],
+ ['manda','Manda Express','Manda Express','transfer','تواصل معنا لمعرفة تفاصيل خدمة Manda Express والتوفر حسب الوجهة.','شبكات التحويل','manda'],
+ ['taptap','Taptap Send','Taptap Send réception','transfer','استفسر عن استقبال التحويلات المتعلقة بـ Taptap Send والإجراءات المتاحة.','شبكات التحويل','taptap'],
+ ['remitly','Remitly','Remitly réception','transfer','اسأل عن خيارات استقبال التحويلات المتعلقة بـ Remitly لدى الوكالة.','شبكات التحويل','remitly'],
+ ['dirham','Dirham Express','Dirham Express','transfer','اطلب معلومات حول Dirham Express، وشروط الخدمة والوثائق المطلوبة.','شبكات التحويل','dirham'],
+ ['al-ansari','Al Ansari Exchange','Al Ansari Exchange','transfer','استفسر عن التحويلات المرتبطة بـ Al Ansari Exchange والتوفر لدى الوكالة.','شبكات التحويل','al-ansari'],
+ ['yes-cash','YES CASH','Yes Cash','transfer','تعرف على خدمات YES CASH التي يمكن الاستفسار عنها بالوكالة.','شبكات التحويل'],
+ ['alyousuf','Alyousuf Exchange','Al Yousuf Exchange','transfer','تواصل لتأكيد توفر الخدمة المرتبطة بـ Alyousuf Exchange وشروطها.','شبكات التحويل']
+ ]},
+ {id:'telecom',slug:'telecommunications',title:'الاتصالات والفواتير',heading:'خدمات الاتصالات ودفع الفواتير',pageTitle:'جميع خدمات الاتصالات والفواتير',icon:'wifi',image:'telecom',intro:'تعبئة الرصيد، الاستفسار عن أداء الفواتير، وخدمات خطوط الهاتف والإنترنت في مكان واحد.',note:'العمليات المتاحة تخضع لشروط المشغل والتحقق المطلوب لدى الوكالة. لا ترسل رموز SIM أو كلمات السر عبر الموقع.',topics:['المشغل ونوع الخدمة المطلوبة','الإجراءات والتحقق المطلوب لدى الوكالة','العرض أو الفاتورة والتكلفة قبل التنفيذ'],items:[
+ ['inwi','تعبئة Inwi','Inwi recharge','phone','استفسر عن تعبئة رصيد إنوي والقيم المتاحة.','التعبئة والمشغلون'],
+ ['orange','تعبئة Orange','Orange recharge','phone','استفسر عن تعبئة أورنج وخيارات الرصيد المتاحة.','التعبئة والمشغلون'],
+ ['maroc-telecom','تعبئة Maroc Telecom','Maroc Telecom IAM recharge','phone','تعرف على خدمات تعبئة اتصالات المغرب لدى الوكالة.','التعبئة والمشغلون'],
+ ['phone-bill','أداء فواتير الهاتف','Paiement facture téléphone','receipt','استفسر عن أداء فاتورة الهاتف والإجراءات حسب المشغل.','الفواتير'],
+ ['internet-bill','أداء فواتير الإنترنت','Paiement facture internet','receipt','تعرف على إمكانية أداء فواتير الإنترنت لدى الوكالة.','الفواتير'],
+ ['other-bills','أداء الفواتير والخدمات المتاحة','Paiement factures services','receipt','تواصل لمعرفة أنواع الفواتير الأخرى التي يمكن أداؤها.','الفواتير'],
+ ['activation','فتح وتفعيل الخطوط والفورفيات','Activation ligne forfait','phone','استفسر عن فتح خط أو تفعيل فورفي حسب عروض المشغل المتاحة.','الخطوط والإنترنت'],
+ ['registration','تسجيل الأرقام (كونطرا)','Contrat enregistrement numéro','document','تعرف على إجراءات تسجيل الرقم والوثائق المطلوبة حسب المشغل.','الخطوط والإنترنت'],
+ ['pin-puk','استرجاع PIN / PUK','Récupération code SIM PIN PUK','shield','استفسر عن المساعدة في استرجاع رموز الشريحة عبر الإجراءات المعتمدة لدى المشغل.','الخطوط والإنترنت'],
+ ['portability','تحويل الرقم (Portabilité)','Portabilite changement opérateur','transfer','تعرف على إمكانية الاحتفاظ برقمك عند تغيير المشغل وشروط العملية.','الخطوط والإنترنت'],
+ ['fibre','Fibre Optique','Internet fibre optique','wifi','استفسر عن عروض الألياف البصرية وإمكانية التغطية حسب العنوان لدى المشغل.','الخطوط والإنترنت'],
+ ['adsl','ADSL','Internet ADSL','wifi','اطلب معلومات حول خدمات الإنترنت ADSL والاشتراكات المتاحة.','الخطوط والإنترنت'],
+ ['lost-number','استرجاع الأرقام الضائعة أو المسروقة','Récupération numéro perdu volé','phone','استفسر عن إجراءات استرجاع الرقم الضائع أو المسروق والتحقق اللازم لدى المشغل.','الخطوط والإنترنت'],
+ ['other-telecom','خدمات أخرى للاتصالات','Autres services télécommunications','wifi','اسأل فريق الوكالة عن الخدمة الهاتفية أو الرقمية التي تحتاجها.','الخطوط والإنترنت']
+ ]},
+ {id:'insurance',slug:'insurance',title:'التأمينات',heading:'خدمات التأمينات',pageTitle:'خدمات التأمينات — ضمان كاش مراد',icon:'shield',image:'insurance',intro:'تعرف على أنواع التأمين التي يمكنك الاستفسار عنها بالوكالة، مع مواكبة لفهم العرض والوثائق المطلوبة.',note:'التغطيات والاستثناءات والشروط والأسعار تُؤكد قبل التعاقد. لا توجد أسعار ترويجية منشورة أو ضمانات تغطية على الموقع.',topics:['نوع التأمين والوضعية المراد تأمينها','التغطيات والاستثناءات وشروط العقد','عرض السعر والوثائق المطلوبة قبل التعاقد'],items:[
+ ['car','تأمين السيارات','Assurance automobile voiture','car','استفسر عن تأمين سيارتك وأنواع العروض والوثائق التي يطلبها المؤمن.','المركبات'],
+ ['motorcycle','تأمين الدراجات','Assurance moto scooter','motorcycle','تعرف على خيارات التأمين الخاصة بالدراجات النارية وشروطها.','المركبات'],
+ ['truck','تأمين الشاحنات','Assurance camion','truck','اطلب معلومات حول تأمين الشاحنات حسب نوع المركبة والاستعمال.','المركبات'],
+ ['travel-insurance','تأمين السفر','Assurance voyage','plane','استفسر عن تأمين السفر بحسب وجهتك ومدة رحلتك وشروط العقد.','الأفراد والأسرة'],
+ ['student','تأمين الدراسة','Assurance étudiant scolaire','graduation','تعرف على خيارات تأمين الدراسة ومتطلبات المؤسسة المعنية.','الدراسة والتدريب'],
+ ['trainee','تأمين المتدربين والتدريب بالشركات والمعامل','Assurance stagiaire stage entreprise usine','briefcase','استفسر عن تأمين المتدربين والتدريب بالشركات والمعامل حسب متطلبات جهة التدريب.','الدراسة والتدريب'],
+ ['safety','تأمين السلامة','Assurance sécurité','shield','اطلب توضيحاً حول عروض تأمين السلامة المتاحة وشروط التغطية.','الأفراد والأسرة'],
+ ['family','تأمين الأسرة','Assurance famille','family','تعرف على الخيارات التأمينية المتعلقة بالأسرة والتغطيات المقترحة.','الأفراد والأسرة'],
+ ['care','تأمين الرعاية','Assurance assistance soins','heart','استفسر عن خدمات تأمين الرعاية وحدود وشروط العرض.','الأفراد والأسرة'],
+ ['funeral','تغطية المصاريف الجنائزية','Frais funéraires obsèques','heart','اطلب معلومات حول عروض تغطية المصاريف الجنائزية، الشروط والاستثناءات.','الأفراد والأسرة'],
+ ['hunting','تأمين الصيد البري','Assurance chasse','shield','تعرف على التأمين المتعلق بالصيد البري ومتطلبات التعاقد.','تأمينات متخصصة']
+ ]},
+ {id:'administration',slug:'administration',title:'الخدمات الإدارية',heading:'الخدمات الإدارية والوثائق',pageTitle:'جميع الخدمات الإدارية والوثائق',icon:'document',image:'administration',intro:'كتابة، وثائق، تسجيلات رقمية وخدمات مكتب. اختر نوع معاملتك واستفسر عن المساعدة المناسبة.',note:'المواكبة الإدارية لا تحل محل القرارات أو المصادقات الصادرة عن الإدارات المعنية. تُؤكد الوثائق والإجراءات لكل ملف مباشرة مع الوكالة.',topics:['نوع الوثيقة أو الإجراء المطلوب','المعطيات والوثائق التي يلزم إحضارها للوكالة','شكل الخدمة والتكلفة قبل الإنجاز'],items:[
+ ['rental','تحرير عقود الكراء','Contrat location bail','document','مساعدة في كتابة عقد الكراء وفق المعطيات المقدمة ومتطلبات المعاملة.','العقود والوثائق'],
+ ['sale-contract','تحرير عقود البيع والشراء','Contrat vente achat','document','استفسر عن كتابة عقود البيع والشراء والبيانات اللازمة.','العقود والوثائق'],
+ ['cession','التنازلات','Cession désistement','pen','مساعدة في تحرير وثائق التنازل حسب نوع الطلب.','العقود والوثائق'],
+ ['commitment','الالتزامات والعقود','Engagement contrat','document','استفسر عن كتابة الالتزامات والعقود والبيانات المطلوبة.','العقود والوثائق'],
+ ['administrative-docs','الوثائق الإدارية','Documents administratifs','folder','تعرف على المساعدة المتاحة لإعداد الوثائق الإدارية المختلفة.','العقود والوثائق'],
+ ['requests','كتابة الطلبات','Rédaction demande','pen','مساعدة في صياغة طلب واضح موجه للجهة المعنية.','الكتابة الإدارية'],
+ ['complaints','الشكايات الموجهة للإدارات','Réclamation plainte administration','pen','استفسر عن كتابة الشكايات وفق المعلومات التي تقدمها.','الكتابة الإدارية'],
+ ['forms','تعبئة الاستمارات','Formulaire administratif','document','مساعدة في تعبئة الاستمارات الإدارية بالبيانات اللازمة.','الكتابة الإدارية'],
+ ['public-writer','خدمات الكتابة العامة','Écrivain public rédaction','pen','خدمات الكتابة العامة والصياغة حسب طبيعة الطلب.','الكتابة الإدارية'],
+ ['university','التسجيل في الجامعات','Inscription université','graduation','استفسر عن المساعدة في التسجيل الجامعي عبر المنصات المعنية خلال فترات التسجيل.','التسجيلات الرقمية'],
+ ['higher-school','التسجيل في المدارس العليا','Inscription école supérieure','graduation','مواكبة خطوات التسجيل في المدارس العليا حسب المنصة والإعلان الرسمي.','التسجيلات الرقمية'],
+ ['training','التسجيل في التكوين المهني','Formation professionnelle OFPPT','graduation','مساعدة في طلبات التسجيل بالتكوين المهني عند إتاحة التسجيل.','التسجيلات الرقمية'],
+ ['public-jobs','التسجيل في مباريات الوظيفة العمومية','Concours emploi public recrutement','briefcase','استفسر عن المساعدة في التسجيل بالمباريات وفق شروط وآجال الإعلان الرسمي.','التسجيلات الرقمية'],
+ ['dv-lottery','التسجيل في قرعة الهجرة الأمريكية أثناء الفترة الرسمية','DV lottery immigration USA','globe','مساعدة إدارية في التسجيل عند فتح الفترة الرسمية، دون ضمان الاختيار أو القبول.','التسجيلات الرقمية'],
+ ['online-registration','التسجيلات الرقمية الأخرى','Inscription numérique en ligne','computer','تواصل لمعرفة إمكانية المساعدة في التسجيل الرقمي الذي تحتاجه.','التسجيلات الرقمية'],
+ ['vehicle-sale','استمارات بيع وشراء السيارات','Formulaire vente achat voiture','car','مساعدة في تعبئة استمارات بيع السيارات وشرائها بالبيانات المطلوبة.','خدمات المركبات'],
+ ['narsa','خدمات NARSA','NARSA véhicule permis','car','استفسر عن المساعدة الإدارية المتاحة للعمليات المرتبطة بخدمات NARSA.','خدمات المركبات'],
+ ['mainlevee','واجبات رفع اليد','Mainlevée','document','اطلب معلومات عن المساعدة في الإجراءات المتعلقة برفع اليد حسب الملف.','خدمات المركبات'],
+ ['vehicle-admin','الإجراءات الإدارية المتعلقة بالمركبات','Démarches administratives véhicule','car','مواكبة بعض الإجراءات الإدارية الخاصة بالمركبات حسب المتاح.','خدمات المركبات'],
+ ['passport','تعبئة استمارات جواز السفر','Passeport formulaire','document','استفسر عن المساعدة في تعبئة استمارة جواز السفر بالمعطيات اللازمة.','الوثائق الشخصية'],
+ ['cv','تحرير السيرة الذاتية CV','Curriculum vitae CV','identity','مساعدة في إعداد وتنسيق سيرة ذاتية اعتماداً على المعلومات التي تقدمها.','الوثائق الشخصية'],
+ ['personal-docs','إعداد الوثائق الشخصية','Documents personnels','identity','تعرف على المساعدة المتاحة لإعداد الوثائق الشخصية المختلفة.','الوثائق الشخصية'],
+ ['admin-help','المساعدة الإدارية في الطلبات المختلفة','Assistance administrative demandes','family','استفسر عن مواكبة الطلبات واستقبال ومعالجة الملفات الإدارية حسب المتاح.','الوثائق الشخصية'],
+ ['photocopy','Photocopie','Photocopie نسخ الوثائق','printer','استفسر عن نسخ الوثائق والأحجام المتاحة بالوكالة.','خدمات المكتب'],
+ ['printing','Impression','Impression طباعة','printer','خدمة طباعة الوثائق حسب الصيغ والأحجام المتاحة.','خدمات المكتب'],
+ ['scan','Scanner','Scanner numérisation مسح ضوئي','printer','استفسر عن مسح الوثائق ضوئياً وصيغ الملفات الممكنة.','خدمات المكتب'],
+ ['supplies','مستلزمات مكتبية بسيطة','Fournitures bureau','folder','تواصل لمعرفة المستلزمات المكتبية البسيطة المتوفرة.','خدمات المكتب']
+ ]},
+ {id:'gaming',slug:'gaming',title:'شحن الألعاب',heading:'شحن الألعاب والمنصات الرقمية',pageTitle:'شحن الألعاب والمنصات الرقمية',icon:'gamepad',image:'gaming',intro:'عالم ألعابك أقرب إليك. استفسر عن خدمات الشحن والمنصات الرقمية المتاحة لدى الوكالة.',note:'التوفر والقيمة والمنطقة وشروط الاستعمال تُؤكد قبل الشراء. لا نطلب كلمة سر حسابك عبر الموقع ولا نعد بمدة تسليم محددة.',topics:['اللعبة أو المنصة ومنطقة الحساب','خيارات الشحن أو البطاقة المتاحة','القيمة والسعر وطريقة الاستعمال قبل الشراء'],items:[
+ ['pubg','PUBG Mobile','PUBG Mobile UC','gamepad','استفسر عن خيارات شحن PUBG Mobile حسب المنطقة والتوفر.','ألعاب الهاتف'],
+ ['free-fire','Free Fire','Free Fire diamants','gamepad','تعرف على خدمات شحن Free Fire المتاحة وشروط الاستعمال.','ألعاب الهاتف'],
+ ['fortnite','Fortnite','Fortnite V Bucks','gamepad','اسأل عن خيارات Fortnite والمنصات والمناطق المتوافقة.','الألعاب والمنصات'],
+ ['roblox','Roblox','Roblox Robux','gamepad','استفسر عن خيارات Roblox المتاحة وطريقة الاستعمال.','الألعاب والمنصات'],
+ ['mobile-legends','Mobile Legends','Mobile Legends diamonds','gamepad','تعرف على خيارات شحن Mobile Legends حسب التوفر.','ألعاب الهاتف'],
+ ['call-of-duty','Call of Duty','Call of Duty COD','gamepad','استفسر عن خدمات Call of Duty مع تحديد نسخة اللعبة والمنصة.','الألعاب والمنصات'],
+ ['playstation','PlayStation','PlayStation PSN','gamepad','اسأل عن خدمات وبطاقات PlayStation والمنطقة المتوافقة مع الحساب.','الألعاب والمنصات'],
+ ['steam','Steam','Steam wallet PC','computer','تعرف على خيارات Steam المتاحة والعملة أو المنطقة المطلوبة.','الألعاب والمنصات'],
+ ['xbox','Xbox','Xbox Microsoft','gamepad','استفسر عن خيارات Xbox وشروط التوافق مع حسابك.','الألعاب والمنصات'],
+ ['nintendo','Nintendo','Nintendo Switch eShop','gamepad','اطلب معلومات عن خدمات Nintendo المتاحة حسب منطقة الحساب.','الألعاب والمنصات']
+ ]},
+ {id:'travel',slug:'travel',title:'السفر والتذاكر',heading:'خدمات السفر وحجز التذاكر',pageTitle:'السفر وحجز التذاكر',icon:'plane',image:'travel',intro:'معلومات ومساعدة في حجز تذاكر السفر. أخبرنا بوجهتك وتاريخ رحلتك للاستفسار عن الخيارات.',note:'الموقع لا يقدم حجزاً مباشراً أو توفراً آنياً للمقاعد. الأسعار والشروط تُؤكد عند الاستفسار لدى الوكالة.',topics:['الوجهة وتاريخ الرحلة المرغوب','خيارات التذاكر المتاحة وشروطها','التكلفة وشروط الأمتعة أو التغيير عند الاقتضاء'],items:[
+ ['ctm','CTM','CTM bus autocar','bus','استفسر عن المساعدة في تذاكر حافلات CTM والرحلة المطلوبة.','شركات النقل'],
+ ['ram','Royal Air Maroc','Royal Air Maroc RAM','plane','اطلب معلومات حول تذاكر الخطوط الملكية المغربية بحسب وجهتك.','شركات النقل'],
+ ['air-arabia','Air Arabia','Air Arabia','plane','استفسر عن المساعدة في حجز تذاكر العربية للطيران.','شركات النقل'],
+ ['qatar','Qatar Airways','Qatar Airways','plane','تعرف على إمكانية المساعدة في تذاكر الخطوط القطرية لرحلتك.','شركات النقل'],
+ ['emirates','Emirates','Emirates','plane','استفسر عن معلومات تذاكر طيران الإمارات للوجهة المطلوبة.','شركات النقل'],
+ ['flight-info','معلومات حول حجز تذاكر الطيران','Billet avion vol réservation','plane','استفسر عن المعلومات اللازمة لطلب حجز رحلة جوية.','مواكبة السفر'],
+ ['bus-info','معلومات حول تذاكر الحافلات','Billet bus autocar','bus','اطلب معلومات عن مسارات وتذاكر الحافلات حسب المتاح.','مواكبة السفر'],
+ ['booking','خدمات المساعدة في الحجوزات','Assistance réservation','globe','مساعدة في الاستفسار عن خيارات الحجز وشروط التذكرة.','مواكبة السفر'],
+ ['travel-info','خدمات السفر المتوفرة بالوكالة','Services informations voyage','globe','تواصل لمعرفة خدمات السفر والمواكبة المتاحة لرحلتك.','مواكبة السفر']
+ ]},
+ {id:'cnss',slug:'cnss-amo',title:'CNSS و AMO',heading:'خدمات CNSS و AMO',pageTitle:'خدمات CNSS و AMO',icon:'health',image:'cnss',intro:'مواكبة إدارية لملفات التعويضات عن المرض والتغطية الصحية، ومساعدة في إعداد الطلبات والاستمارات.',note:'الوكالة تقدم مساعدة إدارية ولا تحدد الأهلية أو نتائج التعويض أو مدة المعالجة. لا ترسل سجلات طبية أو وثائق هوية عبر الموقع.',topics:['نوع المساعدة الإدارية المطلوبة','الوثائق اللازمة التي يتم تأكيدها لدى الوكالة','إجراءات التتبع المتاحة دون وعد بنتيجة أو أجل'],items:[
+ ['deposit','إيداع ملفات التعويضات عن المرض','Dépôt remboursement maladie','health','استفسر عن المساعدة الإدارية في إيداع ملفات التعويضات عن المرض.','ملفات التعويضات'],
+ ['prepare','المساعدة في إعداد ملفات التعويضات','Préparation dossier remboursement','folder','مواكبة تنظيم ملف التعويض والتحقق من متطلبات تقديمه لدى الجهة المعنية.','ملفات التعويضات'],
+ ['forms','تعبئة استمارات CNSS','Formulaire CNSS','document','استفسر عن المساعدة في تعبئة استمارات CNSS بالبيانات المطلوبة.','الاستمارات والتتبع'],
+ ['follow-up','المساعدة في تتبع الملفات','Suivi dossier CNSS','document','مساعدة إدارية في معرفة قنوات وإجراءات تتبع الملف حسب المتاح.','الاستمارات والتتبع'],
+ ['documents','المعلومات حول الوثائق المطلوبة','Documents requis CNSS','folder','اطلب معلومات عن الوثائق التي يلزم إعدادها حسب طبيعة طلبك.','الاستمارات والتتبع'],
+ ['amo-registration','التسجيل في خدمات AMO المتاحة','Inscription couverture AMO','health','استفسر عن المواكبة الإدارية للتسجيل في خدمات AMO حسب المتاح.','التغطية الصحية'],
+ ['health-files','المساعدة الإدارية في ملفات التغطية الصحية','Assistance couverture santé','heart','مواكبة إدارية لطلبات وملفات التغطية الصحية دون تحديد الاستحقاق.','التغطية الصحية']
+ ]},
+ {id:'finance',slug:'damane-salaf',title:'ضمان سلف',heading:'ضمان سلف',pageTitle:'ضمان سلف — معلومات حول خدمات التمويل',icon:'coins',image:'finance',intro:'معلومات واستفسارات حول خدمة ضمان سلف. تواصل مع الوكالة لمعرفة العروض والشروط والوثائق قبل تقديم أي طلب.',note:'الاستفسار لا يمثل عرض تمويل أو موافقة على القرض. شروط الأهلية والكلفة والمبالغ يحددها مقدم التمويل. لا توجد مبالغ أو أقساط منشورة غير مؤكدة.',topics:['العرض المتاح والجهة المقدمة للتمويل','شروط الأهلية والوثائق اللازمة','الكلفة الإجمالية وشروط السداد التي يجب تأكيدها'],items:[
+ ['introduction','التعريف بخدمة ضمان سلف','Damane Salaf financement crédit','coins','تعرف لدى الوكالة على طبيعة خدمة ضمان سلف وكيفية طلب المعلومات.','معلومات التمويل'],
+ ['offers','معلومات حول عروض السلف المتاحة','Offres crédit financement','coins','استفسر عن عروض التمويل الحالية وشروطها مباشرة مع الوكالة.','معلومات التمويل'],
+ ['conditions','الشروط العامة','Conditions éligibilité crédit','shield','اطلب توضيحاً حول الشروط العامة ومعايير دراسة الطلب لدى مقدم التمويل.','معلومات التمويل'],
+ ['documents','الاستفسار عن الوثائق','Documents financement','folder','تعرف على الوثائق المطلوبة قبل الشروع في أي طلب تمويل.','معلومات التمويل'],
+ ['amounts','الاستفسار عن مبالغ التمويل','Montants financement crédit','coins','تواصل لمعرفة المبالغ الممكن الاستفسار عنها والكلفة وشروط السداد.','معلومات التمويل']
+ ]}
+];
+window.SERVICES=CATEGORIES.flatMap(c=>c.items.map(([key,title,titleFr,icon,description,group,logo])=>({id:`${c.id}-${key}`,key,category:c.id,title,titleFr,icon,description,group,logo:logo?`assets/logos/${logo}.webp`:null,image:`assets/images/categories/${c.image}.webp`,verified:false,requiredDocuments:[],verifiedSteps:[],availability:'confirm-with-agency',features:c.topics,note:c.note})));
+// Crisp local brand vectors and generated service illustrations; UI symbols stay SVG.
+const brandVectorFiles={'transfer-western-union':'westernunion','transfer-moneygram':'moneygram','gaming-playstation':'playstation','gaming-steam':'steam','gaming-roblox':'roblox','gaming-pubg':'pubg','gaming-fortnite':'fortnite','travel-emirates':'emirates','travel-qatar':'qatarairways'};
+const illustratedInsurance=['car','motorcycle','truck','travel-insurance','student','family'];
+Object.assign(brandVectorFiles,{'gaming-xbox':'xbox','gaming-nintendo':'nintendo'});
+SERVICES.forEach(service=>{
+ service.image=`assets/images/categories/${CATEGORIES.find(c=>c.id===service.category).image}${['cnss','finance'].includes(service.category)?'':'-hq'}.webp`;
+ if(brandVectorFiles[service.id])service.brandMark=`assets/logos/vector/${brandVectorFiles[service.id]}.svg`;
+ if(service.id==='transfer-remitly')service.logo='assets/logos/vector/remitly.svg';
+ if(service.id==='transfer-al-ansari')service.logo='assets/logos/vector/al-ansari.png';
+ if(service.category==='insurance'&&illustratedInsurance.includes(service.key))service.illustration=`assets/illustrations/insurance/${service.key}.webp`;
+});
+window.UNVERIFIED_OFFERS={insurance:[{type:'travel',amount:325,verified:false},{type:'student-trainee',amount:50,verified:false}],finance:[5000,10000,20000].map(amount=>({amount,verified:false})),partnershipsVerified:false,exactAddressVerified:false};

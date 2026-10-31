@@ -1,0 +1,20 @@
+# Local QA output and previews
+output/
+preview-*.png
+node_modules/
+.vercel/
+__pycache__/
+*.pyc
+
+# Local generation provenance contains machine-specific source paths
+assets/generated-sources.json
+assets/hq-generated-sources.json
+
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db

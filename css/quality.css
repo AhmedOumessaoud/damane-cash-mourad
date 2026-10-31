@@ -1,0 +1,45 @@
+/* High-resolution photography and a coherent illustrated icon system. */
+.card-wa>.icon{filter:invert(50%) sepia(83%) saturate(720%) hue-rotate(93deg) brightness(88%)}
+.dialog-picture.illustrated{background:radial-gradient(ellipse at center,#e7f2ff,#fff 75%)}
+.dialog-picture.illustrated img{object-fit:contain;padding:12px}
+.home-hero .hero-layout{gap:20px;min-height:510px;align-items:center}
+.home-hero .hero-art{margin:20px -30px 30px 0;min-height:0;height:auto;aspect-ratio:4/3;align-self:center;overflow:hidden;border-radius:30px 8px 8px 30px;box-shadow:0 16px 50px #00113a33}
+.home-hero .hero-art img{width:100%;height:100%;max-height:none;object-fit:contain;object-position:center}
+.home-hero .hero-art:before{background:linear-gradient(90deg,#06316e45,transparent 14%);pointer-events:none}
+.hero-copy h1{font-size:clamp(36px,3.9vw,56px)}
+.quick-nav>a{min-height:122px;padding-top:13px;gap:5px}
+.quick-nav .category-icon{width:62px;height:62px;object-fit:contain;filter:drop-shadow(0 3px 4px #063b9e16)}
+.related-grid>a>.category-icon:first-child{width:55px;height:55px;object-fit:contain}
+.brand-mark{display:block;width:33px;height:33px;object-fit:contain;flex-shrink:0}
+.brand-card:has(.brand-mark){flex-direction:row;gap:7px;padding:8px}
+.brand-card:has(.brand-mark) strong{font-size:12px;line-height:1.4}
+.transfer-band .western-union{background:#ffdc28;border-color:#f6cf1d}
+.transfer-band .remitly{background:#153e77;border-color:#27598f}
+.transfer-band .al-ansari{background:#12356d;border-color:#27598f}
+.detail-card.al-ansari .detail-card-top{background:#12356d}
+.detail-card.remitly .detail-card-top{background:#153e77}
+.transfer-band .moneygram .brand-mark{filter:invert(19%) sepia(90%) saturate(3640%) hue-rotate(337deg) brightness(88%)}
+.gaming-band .brand-mark,.gaming-band .preview-card>.icon{filter:brightness(0) invert(1);width:29px;height:29px}
+.gaming-band .preview-card{min-height:79px;gap:5px}
+.gaming-band .brand-card:has(.brand-mark){flex-direction:column}
+.gaming-band .brand-card:has(.brand-mark) strong{font-size:10px}
+.gaming-band .nintendo .brand-mark{width:54px;height:27px}
+.gaming-band .preview-card>.icon{width:27px;height:27px}
+.travel-band .brand-mark{width:34px;height:35px;filter:invert(17%) sepia(97%) saturate(1923%) hue-rotate(326deg) brightness(85%)}
+.travel-band .brand-card:has(.brand-mark){flex-direction:column}
+.service-illustration{display:block;object-fit:contain;filter:drop-shadow(0 4px 5px #063b9e18)}
+.wide-band .illustrated-preview{padding:7px 7px 12px;min-height:148px;gap:3px}
+.illustrated-preview .service-illustration{height:98px;width:100%;object-fit:contain}
+.detail-card-top.illustrated{width:100%;padding:6px;background:radial-gradient(ellipse at center,#eaf4ff,#fff 75%);min-height:150px;border-radius:17px}
+.detail-card-top.illustrated .service-illustration{width:100%;height:150px;object-fit:contain}
+.detail-card-top .brand-mark{width:43px;height:43px}
+body[data-category=gaming] .detail-card-top .brand-mark{filter:brightness(0) invert(1)}
+.agency-figure img{height:auto;aspect-ratio:4/3;object-fit:contain;background:#062558}
+.transfer-band .band-art img{object-position:65% center}
+.telecom-band .band-art img{object-position:52% center}
+.gaming-band .band-art img{object-position:60% center}
+.category-art img{object-position:center}
+@media(max-width:1024px){.home-hero .hero-layout{min-height:440px}.home-hero .hero-art{margin-inline-end:-20px}.hero-copy h1{font-size:40px}.quick-nav .category-icon{width:53px;height:53px}.quick-nav>a{min-height:112px}.brand-card:has(.brand-mark){gap:5px}.brand-card:has(.brand-mark) strong{font-size:10px}.wide-band .illustrated-preview{min-height:132px}.illustrated-preview .service-illustration{height:84px}}
+@media(max-width:760px){.home-hero .hero-layout{min-height:365px}.home-hero .hero-art{margin:15px -16px 30px 0;border-radius:25px 5px 5px 25px}.hero-copy h1{font-size:34px}.quick-nav>a{min-height:103px}.quick-nav .category-icon{width:49px;height:49px}.related-grid>a>.category-icon:first-child{width:43px;height:43px}.gaming-band .preview-card{min-height:67px}.gaming-band .brand-mark,.gaming-band .preview-card>.icon{width:25px;height:25px}.gaming-band .brand-card:has(.brand-mark) strong{font-size:9px}.wide-band .illustrated-preview{min-height:115px}.illustrated-preview .service-illustration{height:70px}.travel-band .brand-mark{width:28px;height:29px}.detail-card-top.illustrated{min-height:125px}.detail-card-top.illustrated .service-illustration{height:125px}}
+@media(max-width:540px){.home-hero .hero-layout{min-height:0;gap:0}.hero-copy h1{font-size:38px}.home-hero .hero-art{margin:0 -16px 16px;aspect-ratio:4/3;height:auto;min-height:0;align-self:auto;border-radius:0;box-shadow:none}.home-hero .hero-art img{object-fit:contain;object-position:center}.home-hero .hero-art:before{background:linear-gradient(180deg,#06295f50,transparent 14%)}.quick-nav>a{flex-basis:96px;min-height:105px}.quick-nav .category-icon{width:51px;height:51px}.transfer-band .brand-card:has(.brand-mark){flex-direction:row;min-height:46px;gap:5px;padding:5px}.transfer-band .brand-mark{width:24px;height:25px}.transfer-band .brand-card:has(.brand-mark) strong{font-size:8px}.gaming-band .preview-card{min-height:66px;gap:4px}.gaming-band .brand-mark,.gaming-band .preview-card>.icon{width:24px;height:24px}.gaming-band .brand-card:has(.brand-mark) strong{font-size:8px}.gaming-band .preview-card strong{font-size:8px}.gaming-band .band-art{height:285px;object-position:65%}.travel-band .preview-card{min-height:60px}.travel-band .brand-mark{width:24px;height:24px}.travel-band .brand-card:has(.brand-mark) strong{font-size:9px}.wide-band .illustrated-preview{min-height:121px;gap:3px;padding:6px 5px 10px}.illustrated-preview .service-illustration{height:81px}.wide-band .illustrated-preview strong{font-size:11px}.detail-card-top.illustrated{min-height:110px}.detail-card-top.illustrated .service-illustration{height:110px}.detail-card>p{font-size:12px}.detail-card .french{font-size:10px}}
+@media(max-width:360px){.hero-copy h1{font-size:33px}.home-hero .hero-art{margin-inline:-12px}.quick-nav>a{flex-basis:90px}.quick-nav .category-icon{width:46px;height:46px}.wide-band .illustrated-preview{min-height:110px}.illustrated-preview .service-illustration{height:71px}.transfer-band .brand-card:has(.brand-mark) strong{font-size:7px}.transfer-band .brand-mark{width:21px;height:23px}.detail-card>p{font-size:11px}}

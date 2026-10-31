@@ -1,0 +1,8 @@
+/* Shared brand/navigation refinements. */
+.desktop-nav .nav-dropdown{display:flex;align-items:center}
+.desktop-nav .services-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;line-height:1.5;white-space:nowrap;vertical-align:middle}
+.services-toggle .services-chevron{display:block;width:15px;height:15px;flex:0 0 15px;color:#ffd21a;transition:transform .2s ease;overflow:visible}
+.services-toggle[aria-expanded=true] .services-chevron{transform:rotate(180deg)}
+.services-toggle:hover,.services-toggle[aria-expanded=true]{color:#ffdf37}
+.brand img,.footer-brand img,.footer-logo{object-fit:contain;image-rendering:auto}
+@media(prefers-reduced-motion:reduce){.services-toggle .services-chevron{transition:none}}
