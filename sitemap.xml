@@ -77,6 +77,7 @@
   <url><loc>http://localhost:4173/services/details/administration-supplies.html</loc></url>
   <url><loc>http://localhost:4173/services/details/administration-social-support.html</loc></url>
   <url><loc>http://localhost:4173/services/details/administration-teaching-contests.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/administration-vignette.html</loc></url>
   <url><loc>http://localhost:4173/services/details/gaming-pubg.html</loc></url>
   <url><loc>http://localhost:4173/services/details/gaming-free-fire.html</loc></url>
   <url><loc>http://localhost:4173/services/details/gaming-fortnite.html</loc></url>
@@ -186,6 +187,7 @@
   <url><loc>http://localhost:4173/fr/services/details/administration-supplies.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/administration-social-support.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/administration-teaching-contests.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/administration-vignette.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/gaming-pubg.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/gaming-free-fire.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/gaming-fortnite.html</loc></url>

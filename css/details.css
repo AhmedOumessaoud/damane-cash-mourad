@@ -16,3 +16,12 @@
 .service-return-links{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
 @media(max-width:760px){.service-information{padding-block:28px}.service-information-panel{padding:25px;border-radius:22px}.service-information-panel h2{font-size:26px}.service-information-panel>p{font-size:13px}.enquiry-topics li{font-size:12px;padding:13px;gap:10px}}
 @media(max-width:540px){.service-information-panel{padding:22px 18px}.service-information-panel h2{font-size:25px}.service-information-panel .actions{display:grid;grid-template-columns:1fr}.service-information-panel .button{width:100%}.enquiry-topics .icon{width:22px;height:24px}.individual-illustration img{padding:15px}.service-return-links{gap:5px}.service-return-links .return-home{font-size:11px}.individual-service-hero h1{font-size:32px}}
+
+/* Agency owner, shared by Arabic and French about pages. */
+.owner-section{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(24px,5vw,64px);align-items:center;padding-block:56px}
+.owner-photo{max-width:460px;border-radius:36px 12px 36px 12px;overflow:hidden;border:3px solid #ffd137;box-shadow:0 16px 40px #03194e1a;background:#eaf4ff}
+.owner-photo img{display:block;width:100%;height:auto}
+.owner-copy h2{color:#03194e;font-size:clamp(26px,3vw,40px);margin:12px 0}
+.owner-copy p{line-height:1.95;margin-bottom:24px}
+.owner-copy .button.outline{color:#03194e;border-color:#b9d2f2;background:#fff}
+@media(max-width:650px){.owner-section{grid-template-columns:1fr;padding-block:32px;gap:24px}.owner-photo{width:min(100%,380px);margin-inline:auto}.owner-copy{text-align:center}.owner-copy .actions{justify-content:center}}
