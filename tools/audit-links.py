@@ -5,6 +5,7 @@ from urllib.parse import urlsplit, unquote
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = [ROOT / 'index.html', ROOT / 'about.html', ROOT / 'contact.html', *sorted((ROOT / 'services').rglob('*.html'))]
+PAGES += sorted((ROOT / 'fr').rglob('*.html'))
 
 class Parser(HTMLParser):
     def __init__(self):

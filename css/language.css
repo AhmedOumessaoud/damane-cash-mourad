@@ -1,0 +1,29 @@
+.language-switch{display:flex;align-items:center;gap:3px;direction:ltr;padding:3px;border:1px solid #ffffff50;border-radius:22px;background:#00174255;flex-shrink:0}
+.language-switch a{display:grid;place-items:center;min-width:28px;height:27px;padding:2px 5px;font:800 11px Arial,sans-serif;color:white;border-radius:18px}
+.language-switch a[aria-current=true]{background:#ffd21a;color:#03194e}
+.header-inner>.menu-toggle{flex-shrink:0}
+@media(max-width:360px){.header-inner{gap:4px!important}.brand img,body[data-page=home] .brand img{max-width:94px}.phone-pill{font-size:9px!important;padding-inline:5px!important}.language-switch a{min-width:20px}.header-inner>.menu-toggle{width:28px;height:30px}}
+html[lang=fr] body{font-family:Arial,sans-serif;line-height:1.6}
+html[lang=fr] h1,html[lang=fr] h2,html[lang=fr] h3{font-family:Arial,sans-serif;line-height:1.2}
+html[lang=fr] .desktop-nav,html[lang=fr] .category-copy,html[lang=fr] .band-content{direction:ltr}
+html[lang=fr] .category-copy,html[lang=fr] .detail-card,html[lang=fr] .service-information-panel{text-align:left}
+html[lang=fr] .hero-copy{direction:ltr!important;text-align:left!important}
+html[lang=fr] .hero-copy h1{font-size:clamp(26px,4.5vw,55px)!important;letter-spacing:-1px}
+html[lang=fr] .hero-copy h1 em{white-space:normal!important}
+html[lang=fr] .hero-copy>p{font-size:13px!important}
+html[lang=fr] .band-content h2{font-size:clamp(19px,2.9vw,32px)!important}
+html[lang=fr] .band-content>p{font-size:11px!important}
+html[lang=fr] .quick-nav span{font-family:Arial,sans-serif;font-size:10px!important}
+html[lang=fr] .wide-band .preview-card strong{font-family:Arial,sans-serif;font-size:10px!important;direction:ltr!important}
+html[lang=fr] .benefit-card h3{font-size:10px!important}
+html[lang=fr] .category-button{font-size:10px!important;gap:8px!important}
+html[lang=fr] .detail-card h3{font-size:19px}
+html[lang=fr] .french{display:none}
+html[lang=fr] .category-hero-layout{direction:ltr}
+html[lang=fr] body[data-page=home] .hero-layout{height:auto!important;min-height:480px!important}
+html[lang=fr] body[data-page=home] .hero-copy{padding-bottom:55px!important}
+@media(min-width:601px) and (max-width:760px){html[lang=fr] body[data-page=home] .home-band{height:auto!important;min-height:205px}html[lang=fr] body[data-page=home] .home-band .band-wrap{height:auto!important;min-height:175px}html[lang=fr] body[data-page=home] .home-band .band-content{position:relative!important;top:0!important;transform:none!important;margin-left:auto}html[lang=fr] body[data-page=home] .wide-band .band-content{width:100%!important}html[lang=fr] body[data-page=home] .telecom-band .band-content{margin-left:0}html[lang=fr] body[data-page=home] .compact-band{min-height:125px}html[lang=fr] body[data-page=home] .compact-band .band-wrap{min-height:100px}html[lang=fr] body[data-page=home] .why-section{height:auto!important;min-height:155px}}
+@media(max-width:760px){.header-inner{gap:8px!important}.language-switch a{min-width:24px;height:25px;font-size:10px}html[lang=fr] .hero-copy h1{font-size:31px!important}html[lang=fr] .hero-copy>p{font-size:10px!important}html[lang=fr] .band-content h2{font-size:22px!important}}
+@media(max-width:600px){body[data-page=home] .brand img,.brand img{max-width:112px}.phone-pill{font-size:10px!important;padding-inline:7px!important;gap:4px!important}.phone-pill .icon{width:18px!important;height:18px!important}.language-switch{gap:0;padding:2px}.language-switch a{min-width:22px;height:24px;font-size:9px}.menu-toggle{width:30px;height:32px;padding:7px}html[lang=fr] .hero-copy h1{font-size:25px!important}html[lang=fr] .hero-copy .button{font-size:7px!important}html[lang=fr] .band-content h2{font-size:21px!important}html[lang=fr] .category-button{font-size:8px!important}}
+@media(min-width:601px) and (max-width:760px){body[data-page=home] .desktop-nav{gap:10px}.language-switch a{min-width:23px}body[data-page=home] .brand img{width:135px}body[data-page=home] .phone-pill{font-size:11px}}
+@media(max-width:360px){.header-inner{gap:4px!important}.brand img,body[data-page=home] .brand img{max-width:90px!important}.phone-pill{font-size:9px!important;padding-inline:4px!important}.language-switch a{min-width:19px}.header-inner>.menu-toggle{width:27px;height:30px}}

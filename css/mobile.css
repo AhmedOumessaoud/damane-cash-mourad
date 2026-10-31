@@ -1,0 +1,152 @@
+/* Mobile composition inspired by the supplied phone reference; no device frame. */
+.mobile-dock{display:none}
+@media(max-width:600px){
+body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+.mobile-dock{display:flex;position:fixed;inset:auto 0 0;z-index:90;align-items:center;gap:0;padding:9px 8px calc(9px + env(safe-area-inset-bottom));background:linear-gradient(110deg,#063b83,#001944);box-shadow:0 -5px 20px #001b5330;border-top:1px solid #8bc8ff44;direction:ltr}
+.mobile-dock>a{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;min-height:48px;flex:1;min-width:0;color:white;font-weight:800;font-size:9px;text-align:center;border-right:1px solid #4985bd40;line-height:1.3}
+.mobile-dock>a>.icon{width:22px;height:23px;filter:brightness(0) invert(1)}
+.mobile-dock>a[aria-current=page]{color:#ffdb22}
+.mobile-dock>a.dock-whatsapp{flex:2.4;flex-direction:row;gap:7px;border:1px solid #46ee86;border-radius:35px;background:linear-gradient(100deg,#06cb50,#00a442);margin-left:8px;font-size:11px;min-height:49px;box-shadow:0 0 14px #00c84b30}
+.mobile-dock>a.dock-whatsapp>.icon{width:29px;height:30px}
+.floating-wa,.back-top,body[data-page=home].past-hero .floating-wa{display:none!important}
+body[data-page=home] .site-header{position:relative;background:linear-gradient(100deg,#001c58,#0054bd);border-radius:0 0 0 24px;border-bottom:3px solid #ffdb25}
+body[data-page=home] .header-inner{min-height:73px;display:grid;grid-template-columns:30px 1fr auto;grid-template-rows:auto auto;gap:2px 9px!important;padding-block:9px;direction:ltr}
+body[data-page=home] .menu-toggle{grid-column:1;grid-row:1/3;width:29px;height:34px;border:0;background:none}
+body[data-page=home] .brand{grid-column:2;grid-row:1/3;justify-self:start}
+body[data-page=home] .brand img{width:140px;max-width:140px!important}
+body[data-page=home] .phone-pill{grid-column:3;grid-row:1;font-size:12px!important;padding:5px 9px!important;min-height:29px;gap:5px!important;justify-self:end;margin:0}
+body[data-page=home] .language-switch{grid-column:3;grid-row:2;justify-self:end;padding:1px;background:#001c5e75}
+body[data-page=home] .language-switch a{height:20px;min-width:25px;font-size:9px}
+body[data-page=home] .mobile-nav{padding-top:12px}
+body[data-page=home] .hero-layout{height:285px;min-height:0}
+body[data-page=home] .hero-copy{padding:22px 0 40px;width:57%;direction:ltr}
+body[data-page=home] .hero-copy h1,body[data-page=home] .hero-copy>p{direction:rtl}
+body[data-page=home] .hero-copy h1{font-size:clamp(27px,7.2vw,40px);line-height:1.13;letter-spacing:-.6px}
+body[data-page=home] .hero-copy h1>span{font-size:.58em;margin-top:8px;line-height:1.4}
+body[data-page=home] .hero-copy>p{font-size:11px;line-height:1.4;margin-top:5px}
+body[data-page=home] .home-hero .hero-art{right:-14px;top:-4px;width:51%;mask-image:linear-gradient(90deg,transparent,#000 15%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 15%)}
+body[data-page=home] .home-hero .hero-art img{object-position:64% center}
+body[data-page=home] .trust-row{position:relative;width:168%;margin:13px 0 11px;gap:5px;z-index:2}
+body[data-page=home] .trust-row span{flex-direction:row;font-size:9px;min-height:32px;padding:5px 4px;border-radius:9px;gap:3px;white-space:nowrap}
+body[data-page=home] .trust-row .icon{width:16px;height:18px}
+body[data-page=home] .hero-copy .actions{width:169%;gap:7px;position:relative;z-index:2}
+body[data-page=home] .hero-copy .actions .button{font-size:11px;min-height:40px;padding:7px 8px;gap:5px}
+body[data-page=home] .hero-copy .actions .icon{width:22px;height:23px}
+body[data-page=home] .hero-wave{height:24px}
+body[data-page=home] .quick-section{padding:0 0 9px}
+body[data-page=home] .quick-nav{gap:6px;padding:3px 0 5px;scrollbar-width:none;direction:ltr;scroll-snap-type:x proximity}
+body[data-page=home] .quick-nav>a{flex-basis:72px;min-height:70px;padding:7px 4px 5px;border-radius:13px;scroll-snap-align:start}
+body[data-page=home] .quick-nav .category-icon{width:30px;height:30px}
+body[data-page=home] .quick-nav span{font-size:9px;direction:rtl}
+body[data-page=home] .quick-nav small{display:none}
+body[data-page=home] .home-band{padding:12px 0 22px}
+body[data-page=home] .band-wrap{min-height:175px}
+body[data-page=home] .band-content{width:59%;padding-top:0}
+body[data-page=home] .band-content h2{font-size:22px;line-height:1.15}
+body[data-page=home] .band-content>p{font-size:9px;line-height:1.4;margin:4px 0 7px}
+body[data-page=home] .band-art{top:-12px;bottom:-18px;width:45%}
+body[data-page=home] .transfer-band .preview-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin-bottom:7px}
+body[data-page=home] .transfer-band .brand-card{min-height:34px;padding:3px;border-radius:7px}
+body[data-page=home] .transfer-band .brand-logo{height:27px}
+body[data-page=home] .transfer-band .brand-card:has(.brand-mark){flex-direction:column;gap:1px;padding:2px}
+body[data-page=home] .transfer-band .brand-mark{width:18px;height:16px}
+body[data-page=home] .transfer-band .brand-card:has(.brand-mark) strong{font-size:5px;line-height:1.1}
+body[data-page=home] .category-button{min-height:30px;font-size:9px;padding:5px 10px;gap:12px;line-height:1.35}
+body[data-page=home] .home-band .gold-wave{height:24px}
+body[data-page=home] .telecom-band .band-content{width:69%}
+body[data-page=home] .telecom-band .band-wrap{min-height:154px}
+body[data-page=home] .telecom-band .band-content h2{font-size:21px}
+body[data-page=home] .telecom-band .preview-card{min-height:62px;padding:5px 2px;gap:4px}
+body[data-page=home] .telecom-band .preview-card strong{font-size:21px}
+body[data-page=home] .telecom-band .maroc-telecom strong{font-size:12px}
+body[data-page=home] .telecom-band .preview-card small{font-size:7px}
+body[data-page=home] .wide-band .band-content{width:100%}
+body[data-page=home] .wide-band .band-content>h2{font-size:22px;margin-left:23%}
+body[data-page=home] .wide-band .band-content>p{font-size:9px;margin-left:23%;margin-bottom:10px}
+body[data-page=home] .wide-band .band-art{height:82px}
+body[data-page=home] .wide-band .preview-grid{display:flex;overflow:auto;scrollbar-width:none;gap:6px;margin:0 0 8px;scroll-snap-type:x proximity;padding:3px 0 6px}
+body[data-page=home] .wide-band .preview-card{flex:0 0 82px;min-height:84px;padding:4px 4px 7px;gap:3px;scroll-snap-align:start}
+body[data-page=home] .wide-band .illustrated-preview .service-illustration{height:55px}
+body[data-page=home] .wide-band .preview-card strong{font-size:10px;line-height:1.25}
+body[data-page=home] .wide-band .preview-card>.icon{width:31px;height:33px;margin-bottom:3px}
+body[data-page=home] .wide-band .band-wrap{min-height:0}
+body[data-page=home] .administration-band .preview-card{min-height:76px}
+body[data-page=home] .gaming-band .band-content{width:72%}
+body[data-page=home] .gaming-band .band-content h2{font-size:22px}
+body[data-page=home] .gaming-band .preview-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+body[data-page=home] .gaming-band .preview-card{min-height:40px;gap:2px;padding:3px}
+body[data-page=home] .gaming-band .preview-card strong{font-size:6px;line-height:1.2}
+body[data-page=home] .gaming-band .brand-mark,body[data-page=home] .gaming-band .preview-card .icon{width:18px;height:18px}
+body[data-page=home] .gaming-band .nintendo .brand-mark{width:32px}
+body[data-page=home] .travel-band .band-wrap{min-height:150px}
+body[data-page=home] .travel-band .preview-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin-bottom:8px}
+body[data-page=home] .travel-band .preview-card{min-height:52px;padding:3px 2px;gap:3px}
+body[data-page=home] .travel-band .preview-card strong{font-size:7px}
+body[data-page=home] .travel-band .brand-mark{width:20px;height:21px}
+body[data-page=home] .compact-band{padding:10px 0 21px}
+body[data-page=home] .compact-band .band-wrap,body[data-page=home] .compact-band .band-content{min-height:86px}
+body[data-page=home] .compact-band .band-content h2{font-size:23px}
+body[data-page=home] .compact-band .band-content>p{font-size:9px;line-height:1.4;margin-bottom:7px}
+body[data-page=home] .compact-band .band-art{top:-10px;bottom:-20px}
+body[data-page=home] .why-section{padding:10px 0 13px}
+body[data-page=home] .why-section h2{font-size:22px;margin-bottom:9px}
+body[data-page=home] .benefit-grid{scrollbar-width:none;gap:6px;padding-bottom:6px;direction:ltr}
+body[data-page=home] .benefit-card{flex-basis:81px;min-height:82px;padding:10px 5px;gap:6px}
+body[data-page=home] .benefit-card>.icon{width:28px;height:30px}
+body[data-page=home] .benefit-card h3{font-size:9px;line-height:1.3}
+body[data-page=home] .site-footer{padding-bottom:25px}
+html[lang=fr] body[data-page=home] .hero-layout{height:auto!important;min-height:365px!important}
+html[lang=fr] body[data-page=home] .hero-copy{padding:20px 0 48px!important}
+html[lang=fr] body[data-page=home] .hero-copy h1{font-size:25px!important}
+html[lang=fr] body[data-page=home] .trust-row{width:169%;margin-top:13px}
+html[lang=fr] body[data-page=home] .trust-row span{font-size:7px;white-space:normal}
+html[lang=fr] body[data-page=home] .hero-copy .actions .button{font-size:9px!important}
+html[lang=fr] .mobile-dock>a{font-size:8px}
+html[lang=fr] .mobile-dock>a.dock-whatsapp{font-size:9px}
+html[lang=fr] body[data-page=home] .wide-band .preview-card strong{font-size:9px!important}
+}
+@media(max-width:360px){body[data-page=home] .brand img{max-width:117px!important;width:117px}body[data-page=home] .phone-pill{font-size:10px!important}body[data-page=home] .hero-copy h1{font-size:25px}body[data-page=home] .hero-layout{height:280px}body[data-page=home] .hero-copy .actions .button{font-size:9px}body[data-page=home] .trust-row span{font-size:7px}body[data-page=home] .hero-copy .actions{width:172%}body[data-page=home] .trust-row{width:172%}.mobile-dock>a.dock-whatsapp{font-size:9px;margin-left:5px;gap:4px}}
+@media(min-width:761px) and (max-width:1024px){.desktop-nav{gap:12px!important;font-size:11px!important}.services-toggle{font-size:11px}.brand img,body[data-page=home] .brand img{width:135px!important}.header-inner{gap:12px!important}.phone-pill,body[data-page=home] .phone-pill{font-size:12px;padding-inline:10px}html[lang=fr] body[data-page=home] .footer-top{flex-wrap:wrap}html[lang=fr] body[data-page=home] .footer-top .button{flex:1 1 24%;font-size:10px;white-space:normal}}
+@media(max-width:600px){html[lang=fr] body[data-page=home] .hero-copy h1,html[lang=fr] body[data-page=home] .hero-copy>p{direction:ltr}.mobile-dock .dock-whatsapp{white-space:normal}}
+
+/* Broad alternating cuts: continuous gold underlay, curved illustrated panels. */
+@media(max-width:600px){
+body[data-page=home]{--mobile-navy:#001c59;--mobile-blue:#005bd4;--mobile-ice:#eaf5ff;--mobile-gold:#ffd424}
+body[data-page=home] main{background:linear-gradient(100deg,#ffcf08 0%,#ffe568 12%,#fff3ad 47%,#ffd92f 85%,#ffc900 100%)}
+body[data-page=home] .site-header{background:radial-gradient(ellipse at 85% 20%,#0063dc,#003b98 52%,#001e61);border-bottom:0;border-radius:0 0 42% 13% / 0 0 20px 12px;box-shadow:0 3px 0 #fff9,0 6px 0 #ffdc25;z-index:51}
+body[data-page=home] .home-hero{background:radial-gradient(at 32% 70%,#0756a8,#00235d 70%)}
+body[data-page=home] .hero-wave{height:27px;background-image:url('../assets/decor/mobile-swoosh.svg');bottom:-2px}
+body[data-page=home] .quick-section{background:radial-gradient(at 20% 30%,#007ff1,#76caff 45%,#e4f6ff 78%);border-radius:26px 8px 38px 8px;padding:8px 0 12px;box-shadow:inset 0 2px 0 #ffffffb3;margin-bottom:5px;overflow:hidden}
+body[data-page=home] .quick-section:after{display:none}
+body[data-page=home] .home-band{background:radial-gradient(ellipse at 63% 45%,#fff 3%,#f2f9ff 45%,#dceeff 100%);border-radius:48px 9px 48px 9px;isolation:isolate;margin:0 0 6px;padding-top:21px;padding-bottom:25px;box-shadow:inset 0 2px 0 #fff9,inset 0 -1px 0 #fff8;overflow:hidden}
+body[data-page=home] .home-band:nth-of-type(even){border-radius:9px 48px 9px 48px}
+body[data-page=home] .home-band:before{display:none}
+body[data-page=home] .home-band .gold-wave{display:none}
+body[data-page=home] .home-band .band-art{top:-23px;bottom:-28px;mask-image:linear-gradient(90deg,#000 64%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 64%,transparent)}
+body[data-page=home] .telecom-band .band-art{mask-image:linear-gradient(270deg,#000 64%,transparent);-webkit-mask-image:linear-gradient(270deg,#000 64%,transparent)}
+body[data-page=home] .transfer-band{border-top-left-radius:54px;background:radial-gradient(at 70% 30%,#fff,#e1f2ff)}
+body[data-page=home] .transfer-band .band-art{width:48%;mask-image:linear-gradient(90deg,#000 65%,transparent);-webkit-mask-image:linear-gradient(90deg,#000 65%,transparent)}
+body[data-page=home] .wide-band .band-art{top:-21px;bottom:auto;height:100px;opacity:.9}
+body[data-page=home] .gaming-band{background:radial-gradient(ellipse at 12% 70%,#0079e9,#003b9d 38%,#001344 85%);border-radius:50px 10px 50px 10px}
+body[data-page=home] .gaming-band .band-art{width:38%;opacity:.96}
+body[data-page=home] .gaming-band .band-content h2{color:#fff;text-shadow:0 2px 5px #00113e80}
+body[data-page=home] .gaming-band .preview-card{background:linear-gradient(#122c4a,#020f22);border-color:#72adf3;box-shadow:0 0 8px #005fda88}
+body[data-page=home] .gaming-band .xbox{background:linear-gradient(#1ca82c,#00630d)}
+body[data-page=home] .gaming-band .nintendo{background:linear-gradient(#ff2428,#c90009)}
+body[data-page=home] .preview-card{background:linear-gradient(145deg,#fff,#f3f9ff);border:1px solid #e1edff;box-shadow:0 5px 9px #2073cd26;border-radius:12px}
+body[data-page=home] .transfer-band .remitly,body[data-page=home] .transfer-band .al-ansari{background:linear-gradient(135deg,#184e91,#08295d);border-color:#3366a1}
+body[data-page=home] .transfer-band .western-union{background:#ffdb1c;border-color:#f2cb13}
+body[data-page=home] .category-button{background:radial-gradient(ellipse at 50% 0%,#138bff,#005bce 48%,#0039a0);border:1px solid #9bd3ff;box-shadow:inset 0 2px 4px #7ccaff7a,0 3px 8px #0055c535;border-radius:25px;font-weight:900}
+body[data-page=home] .telecom-band .inwi{background:linear-gradient(130deg,#be00ce,#850099);box-shadow:0 4px 10px #9900a92b}
+body[data-page=home] .telecom-band .orange{background:linear-gradient(130deg,#ff9b0a,#ff6400)}
+body[data-page=home] .telecom-band .maroc-telecom{background:linear-gradient(130deg,#00adff,#004bc6)}
+body[data-page=home] .compact-band{padding-top:18px;padding-bottom:19px;border-radius:45px 8px 45px 8px}
+body[data-page=home] .compact-band .band-art{top:-18px;bottom:-21px;width:49%}
+body[data-page=home] .finance-band{background:linear-gradient(110deg,#e2f1ff,#fff 70%)}
+body[data-page=home] .why-section{background:radial-gradient(at 50% 15%,#fff,#e2f1ff 85%);border-radius:40px 10px 0 0;padding-top:18px;padding-bottom:15px;box-shadow:inset 0 2px #fff;margin-top:0}
+body[data-page=home] .why-section h2{font-size:21px;color:#001b60}
+body[data-page=home] .benefit-card{background:linear-gradient(#fff,#f1f8ff);border-color:#e8f2ff;box-shadow:0 5px 10px #005cc322;border-radius:12px}
+body[data-page=home] .site-footer{background:radial-gradient(at 15% 0%,#0647a2,#00143f 80%)}
+.mobile-dock{background:linear-gradient(115deg,#003f92,#00205b 57%,#001a49);border-top:1px solid #569be280;box-shadow:0 -6px 18px #00275626}
+.mobile-dock>a.dock-whatsapp{background:linear-gradient(100deg,#00cd4a,#00b33e);border:1px solid #27ef70;box-shadow:inset 0 1px #67ffa880,0 0 12px #00c43c2e}
+}
