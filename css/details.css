@@ -24,4 +24,18 @@
 .owner-copy h2{color:#03194e;font-size:clamp(26px,3vw,40px);margin:12px 0}
 .owner-copy p{line-height:1.95;margin-bottom:24px}
 .owner-copy .button.outline{color:#03194e;border-color:#b9d2f2;background:#fff}
+.home-vignette{background:linear-gradient(120deg,#03194e,#0055cb);color:#fff;border-block:3px solid #ffd137;border-radius:54px 12px 54px 12px;margin-block:18px}
+.vignette-layout{display:grid;grid-template-columns:minmax(180px,.6fr) minmax(0,1.4fr);gap:40px;align-items:center;padding-block:40px}
+.vignette-visual{display:grid;place-items:center;gap:14px;background:#ffffff12;border:1px solid #ffffff40;border-radius:32px;padding:32px;color:#ffd137}
+.vignette-visual .icon{width:130px;height:130px;background:#fff;border-radius:24px;padding:14px}
+.vignette-visual span{font-size:24px;font-weight:900;letter-spacing:3px}
+.vignette-photo{margin:0;padding:0;gap:0;overflow:hidden}
+.vignette-photo img{display:block;width:100%;height:auto;object-fit:contain}
+.vignette-photo figcaption{font-size:20px;font-weight:900;letter-spacing:3px;padding:12px}
+.vignette-copy h2{color:#fff;font-size:clamp(25px,3vw,38px);margin:12px 0}
+.vignette-copy p{line-height:1.9;margin-bottom:24px}
+.vignette-copy .eyebrow{color:#ffd137}
+.home-owner{background:#f3f8ff;border-radius:40px;padding-inline:clamp(16px,3vw,40px);margin-block:32px}
+@media(max-width:650px){.vignette-layout{grid-template-columns:1fr;gap:20px;padding-block:28px}.vignette-visual{padding:16px;max-width:240px;width:100%;margin-inline:auto}.vignette-visual .icon{width:84px;height:84px}.vignette-copy{text-align:center}.vignette-copy .actions{justify-content:center}.home-owner{width:calc(100% - 24px)}}
+@media(max-width:650px){.vignette-photo{padding:0;max-width:340px}}
 @media(max-width:650px){.owner-section{grid-template-columns:1fr;padding-block:32px;gap:24px}.owner-photo{width:min(100%,380px);margin-inline:auto}.owner-copy{text-align:center}.owner-copy .actions{justify-content:center}}

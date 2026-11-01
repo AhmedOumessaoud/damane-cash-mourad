@@ -1,0 +1,64 @@
+/* Give photography room to breathe on phones; keep desktop composition intact. */
+@media(max-width:600px){
+ body[data-page=home] .hero-layout{display:flex;flex-direction:column;height:auto!important;min-height:0!important;gap:0;padding-top:0}
+ body[data-page=home] .hero-copy,html[lang=fr] body[data-page=home] .hero-copy{width:100%;padding:28px 0 18px!important;direction:inherit}
+ body[data-page=home] .hero-copy .eyebrow{display:block;font-size:10px;margin-bottom:12px}
+ body[data-page=home] .hero-copy h1,html[lang=fr] body[data-page=home] .hero-copy h1{font-size:clamp(30px,8vw,43px)!important;line-height:1.24;letter-spacing:0}
+ body[data-page=home] .hero-copy h1>span{font-size:.62em;line-height:1.5;margin-top:6px}
+ body[data-page=home] .hero-copy>p{font-size:13px;line-height:1.7;max-width:360px;margin:10px auto}
+ body[data-page=home] .trust-row,html[lang=fr] body[data-page=home] .trust-row{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:16px 0}
+ body[data-page=home] .trust-row span,html[lang=fr] body[data-page=home] .trust-row span{font-size:11px;min-height:38px;justify-content:center;white-space:normal;gap:6px;padding:7px}
+ body[data-page=home] .hero-copy .actions{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ body[data-page=home] .hero-copy .actions .button,html[lang=fr] body[data-page=home] .hero-copy .actions .button{font-size:11px!important;min-height:48px;padding:9px 8px;line-height:1.5}
+ body[data-page=home] .home-hero .hero-art{position:relative;inset:auto;width:100%;height:auto;min-height:0;margin:0 0 22px;overflow:hidden;border-radius:24px 24px 12px 12px;mask-image:none;-webkit-mask-image:none;box-shadow:0 8px 30px #00102d50}
+ body[data-page=home] .home-hero .hero-art:before{display:none}
+ body[data-page=home] .home-hero .hero-art img{position:static;display:block;width:100%;height:auto;max-height:none;aspect-ratio:4/3;object-fit:cover;object-position:center}
+ body[data-page=home] .hero-wave{height:20px}
+ body[data-page=home] .quick-section{padding-block:10px}
+ body[data-page=home] .quick-nav>a{flex-basis:88px;min-height:86px}
+ body[data-page=home] .quick-nav span{font-size:11px}
+ body[data-page=home] .home-band{padding:16px 0 24px;margin-bottom:8px;border-radius:32px 8px 32px 8px}
+ body[data-page=home] .home-band .band-wrap{display:flex;flex-direction:column;gap:18px;min-height:0}
+ body[data-page=home] .home-band .band-art{position:relative;inset:auto;width:100%;height:auto;min-height:0;max-height:none;order:0;margin:0;border-radius:22px;opacity:1;mask-image:none;-webkit-mask-image:none;overflow:hidden}
+ body[data-page=home] .home-band .band-art img{position:static;display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;object-position:center}
+ body[data-page=home] .home-band .band-content{width:100%;min-height:0;margin:0;padding:0;order:1}
+ body[data-page=home] .home-band .band-content>h2{font-size:26px;line-height:1.35;margin:0;min-height:0}
+ body[data-page=home] .home-band .band-content>p{font-size:13px;line-height:1.7;margin:7px 0 16px;min-height:0}
+ body[data-page=home] .home-band .preview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:0 0 16px;gap:8px;overflow:visible;padding:0}
+ body[data-page=home] .transfer-band .preview-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+ body[data-page=home] .home-band .preview-card{min-height:88px;padding:9px 5px;gap:6px;border-radius:13px}
+ body[data-page=home] .home-band .preview-card strong,html[lang=fr] body[data-page=home] .wide-band .preview-card strong{font-size:12px!important;line-height:1.45}
+ body[data-page=home] .home-band .preview-card small{font-size:10px}
+ body[data-page=home] .home-band .preview-card>.icon{width:36px;height:38px}
+ body[data-page=home] .transfer-band .brand-card{min-height:58px;padding:5px}
+ body[data-page=home] .transfer-band .brand-logo{height:40px}
+ body[data-page=home] .transfer-band .brand-mark{width:28px;height:28px}
+ body[data-page=home] .transfer-band .brand-card:has(.brand-mark) strong{font-size:8px!important}
+ body[data-page=home] .wide-band .illustrated-preview .service-illustration{height:72px;width:100%;object-fit:contain}
+ body[data-page=home] .telecom-band .preview-card strong{font-size:22px!important}
+ body[data-page=home] .telecom-band .maroc-telecom strong{font-size:14px!important}
+ body[data-page=home] .gaming-band .preview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body[data-page=home] .gaming-band .preview-card{min-height:64px}
+ body[data-page=home] .gaming-band .brand-mark{width:34px;height:34px}
+ body[data-page=home] .gaming-band .nintendo .brand-mark{width:65px}
+ body[data-page=home] .travel-band .preview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body[data-page=home] .travel-band .brand-mark{width:40px;height:40px}
+ body[data-page=home] .home-band .category-button{width:100%;min-height:46px;margin:0;font-size:12px;padding:10px 15px;line-height:1.5;gap:12px}
+ .home-vignette{margin:10px 0;border-radius:32px 8px}
+ .vignette-layout{gap:20px}
+ .vignette-photo{max-width:none;width:100%}
+ .vignette-copy h2{font-size:26px;line-height:1.4}
+ .vignette-copy .actions{display:grid;grid-template-columns:1fr;gap:9px}
+ .vignette-copy .button{min-height:46px}
+ .home-owner{margin-block:12px;padding-block:24px;border-radius:28px}
+ .home-owner .owner-photo{width:100%;max-width:380px}
+ .home-owner .owner-copy p{font-size:14px;line-height:1.9}
+ .home-owner .actions{display:flex;flex-wrap:wrap;gap:9px}
+ .home-owner .actions .button{flex:1 1 140px;min-height:46px}
+ .category-art img,.agency-figure img{height:auto;max-height:none;object-fit:contain}
+ .individual-illustration img{padding:12px;aspect-ratio:4/3}
+ body[data-page=home] .why-section{padding-block:24px}
+ body[data-page=home] .benefit-card{flex-basis:112px;min-height:110px;padding:14px 8px}
+ body[data-page=home] .benefit-card h3{font-size:11px;line-height:1.5}
+ .mobile-dock>a{min-height:48px}
+}

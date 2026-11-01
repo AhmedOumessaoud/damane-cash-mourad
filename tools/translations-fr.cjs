@@ -91,3 +91,10 @@ module.exports.categories.finance.note="Les informations et mensualités citées
 
 module.exports.services.administration.push(['Paiement de la vignette automobile','Paiement de la vignette automobile chez Damane Cash Mourad. Contactez-nous pour connaître les informations requises et confirmer le montant et les frais de service avant l’opération.']);
 Object.assign(module.exports.ui,{"مراد، صاحب الوكالة":"Mourad, propriétaire de l’agence","قريب منكم وفي خدمتكم":"À votre écoute, près de chez vous","مراد، صاحب وكالة ضمان كاش مراد بالدخيسة مكناس، يرحب بكم ويساعدكم على اختيار الخدمة المناسبة والإجابة عن استفساراتكم.":"Mourad, propriétaire de Damane Cash Mourad à Dkhissa, Meknès, vous accueille, vous aide à choisir le service adapté et répond à vos questions.","صورة مراد، صاحب وكالة ضمان كاش مراد":"Portrait de Mourad, propriétaire de Damane Cash Mourad"});
+
+Object.assign(module.exports.ui,{
+ 'خدمات السيارات':'Services automobiles',
+ 'سيارة لخدمة أداء الضريبة السنوية':'Voiture pour le paiement de la vignette annuelle',
+ 'خلص ضريبة سيارتك عند ضمان كاش مراد. تواصل معنا لمعرفة المعلومات المطلوبة ومبلغ الأداء ومصاريف الخدمة.':'Payez votre vignette automobile chez Damane Cash Mourad. Contactez-nous pour connaître les informations requises, le montant et les frais de service.',
+ 'تفاصيل ضريبة السيارات':'Détails de la vignette automobile'
+});
