@@ -1,0 +1,45 @@
+/* Separate the three money-service families and keep full wordmarks legible. */
+.service-menu{max-height:calc(100dvh - 110px);overflow-y:auto;overscroll-behavior:contain}
+.payment-family-link{display:inline-flex;align-items:center;justify-content:center;gap:7px;flex-shrink:0;padding:7px 15px;border:1px solid #d3e1f3;border-radius:25px;background:#fff;color:#003ca4;font-size:11px;font-weight:700;line-height:1.6;text-align:center}
+.payment-family-link .icon{width:20px;height:22px;flex-shrink:0}
+.payment-family-link:hover,.payment-family-link:focus-visible{background:#e6f2ff;border-color:#0873e8}
+.payment-family-link:focus-visible{outline:2px solid #0873e8;outline-offset:2px}
+@media(max-width:760px){body[data-category=transfer] .group-filters,body[data-category=domestic] .group-filters,body[data-category=wallets] .group-filters{flex-wrap:wrap;overflow:visible;justify-content:center}.payment-family-link{font-size:10px;padding:7px 12px}}
+.quick-nav{grid-template-columns:repeat(10,minmax(0,1fr))}
+.domestic-band,.wallets-band{background:linear-gradient(120deg,#e4f2ff,#fff);border-top:3px solid #ffda32}
+.domestic-band .band-content,.wallets-band .band-content{font-size:14px}
+.domestic-band .preview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.wallets-band .preview-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.domestic-band .brand-card,.wallets-band .brand-card{background:#fff;min-height:100px;padding:16px}
+.domestic-band .brand-logo,.wallets-band .brand-logo{width:100%;height:64px;object-fit:contain}
+.detail-card:has(.detail-logo[src*="/payments/"]) .detail-card-top{width:100%;background:#fff;padding:16px}
+.detail-logo[src*="/payments/"]{width:100%;max-width:240px;height:78px;object-fit:contain}
+.transfer-band .brand-card:has(.brand-logo[src*="/payments/"]){background:#fff;padding:8px}
+.transfer-band .ria.brand-card{background:#ff6100!important;padding:0!important;overflow:hidden}
+.transfer-band .ria .brand-logo{width:100%;height:100%;min-height:48px;object-fit:contain}
+.transfer-band .alyousuf .brand-logo{height:64px;object-fit:contain}
+.detail-card.ria .detail-card-top:has(.detail-logo){background:#ff6100;padding:6px}
+.transfer-band .western-union.brand-card{background:#ffdf00!important;padding:0!important}
+.transfer-band .western-union .brand-logo,.transfer-band .moneygram .brand-logo{height:64px;max-height:100%;object-fit:contain}
+.detail-card.western-union .detail-card-top:has(.detail-logo){background:#ffdf00;padding:0}
+.detail-card.moneygram .detail-logo,.detail-card.western-union .detail-logo{height:110px}
+.detail-card.dirham .detail-card-top,.detail-card.alyousuf .detail-card-top{padding:8px;min-height:148px;overflow:hidden}
+.detail-card.dirham .detail-logo{width:100%;max-width:none;height:140px;object-fit:cover;object-position:center}
+.detail-card.alyousuf .detail-logo{width:100%;max-width:none;height:140px;object-fit:contain}
+.transfer-band .dirham .brand-logo{width:100%;height:72px;object-fit:cover;object-position:center}
+@media(max-width:540px){.detail-card.dirham .detail-card-top,.detail-card.alyousuf .detail-card-top{padding:5px;min-height:112px}.detail-card.dirham .detail-logo,.detail-card.alyousuf .detail-logo{height:102px}}
+@media(min-width:601px){
+ body[data-page=home] .transfer-band,body[data-page=home] .domestic-band,body[data-page=home] .wallets-band{height:auto;min-height:300px;padding:28px 0 38px}
+ body[data-page=home] .transfer-band .band-wrap,body[data-page=home] .domestic-band .band-wrap,body[data-page=home] .wallets-band .band-wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:28px;height:auto;min-height:290px}
+ body[data-page=home] .transfer-band .band-art,body[data-page=home] .domestic-band .band-art,body[data-page=home] .wallets-band .band-art{position:relative;inset:auto;width:100%;height:100%;min-height:270px;margin:0;border-radius:36px 8px;mask-image:none;-webkit-mask-image:none}
+ body[data-page=home] .transfer-band .band-content,body[data-page=home] .domestic-band .band-content,body[data-page=home] .wallets-band .band-content{position:relative;inset:auto;width:100%;transform:none;margin:0}
+ body[data-page=home] .transfer-band .preview-grid{grid-template-columns:repeat(4,minmax(0,1fr));margin:12px 0}
+}
+@media(max-width:600px){
+ body[data-page=home] .domestic-band .preview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body[data-page=home] .wallets-band .preview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ body[data-page=home] .domestic-band .brand-card,body[data-page=home] .wallets-band .brand-card{min-height:86px;padding:12px;background:#fff}
+ body[data-page=home] .domestic-band .brand-logo,body[data-page=home] .wallets-band .brand-logo{height:58px}
+ body[data-page=home] .transfer-band .brand-card:has(.brand-logo[src*="/payments/"]){min-height:58px;padding:5px}
+ html[lang=fr] body[data-page=home] .wallets-band .band-content h2{font-size:24px!important}
+}

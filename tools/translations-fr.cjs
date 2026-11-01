@@ -98,3 +98,10 @@ Object.assign(module.exports.ui,{
  'خلص ضريبة سيارتك عند ضمان كاش مراد. تواصل معنا لمعرفة المعلومات المطلوبة ومبلغ الأداء ومصاريف الخدمة.':'Payez votre vignette automobile chez Damane Cash Mourad. Contactez-nous pour connaître les informations requises, le montant et les frais de service.',
  'تفاصيل ضريبة السيارات':'Détails de la vignette automobile'
 });
+
+require('./payment-translations.cjs')(module.exports);
+
+module.exports.ui['خدمات التحويل والتعبئة والسحب']='Transferts, dépôts et retraits';
+
+module.exports.services.transfer=module.exports.services.transfer.filter(service=>service[0]!=='YES CASH');
+module.exports.services.domestic=module.exports.services.domestic.filter(service=>service[0]!=='Manda Express');

@@ -120,7 +120,28 @@ for(const category of CATEGORIES)for(const item of category.items){const detail=
 CATEGORIES.find(c=>c.id==='insurance').note="التغطيات والاستثناءات والشروط تؤكد قبل التعاقد. الأثمنة المذكورة واردة في الإعلانات المقدمة؛ صلاحيتها والثمن النهائي يخضعان لتأكيد الوكالة.";
 CATEGORIES.find(c=>c.id==='finance').note="المعلومات والأقساط المذكورة مستمدة من الإعلانات المقدمة ولا تشكل عرض تمويل أو موافقة على قرض. أكد الأهلية وصلاحية العرض وجميع التكاليف مع الجهة الممولة قبل التعاقد.";
 CATEGORIES.find(c=>c.id==='administration').items.push(['vignette','أداء ضريبة السيارات (Vignette)','Paiement vignette automobile','car','أداء ضريبة السيارات (Vignette) لدى وكالة ضمان كاش مراد. تواصل معنا لمعرفة المعلومات المطلوبة وتأكيد مبلغ الأداء ومصاريف الخدمة قبل العملية.','المركبات']);
-window.SERVICES=CATEGORIES.flatMap(c=>c.items.map(([key,title,titleFr,icon,description,group,logo])=>({id:`${c.id}-${key}`,key,category:c.id,title,titleFr,icon,description,group,logo:logo?`assets/logos/${logo}.webp`:null,image:`assets/images/categories/${c.image}.webp`,verified:false,requiredDocuments:[],verifiedSteps:[],availability:'confirm-with-agency',features:c.topics,note:c.note})));
+/* Separate international, domestic and account cash operations. */
+const internationalTransfers=CATEGORIES.find(c=>c.id==='transfer');
+const mandaItem=internationalTransfers.items.splice(internationalTransfers.items.findIndex(i=>i[0]==='manda'),1)[0];
+Object.assign(internationalTransfers,{title:'التحويلات الدولية',heading:'خدمات التحويلات الدولية',pageTitle:'إرسال واستقبال التحويلات الدولية',intro:'إرسال واستقبال الأموال من الخارج عبر شبكات التحويل الدولية. اختر الشبكة لمعرفة تفاصيل الخدمة.'});
+internationalTransfers.items.push(
+ ['yalla-xash','Yalla Xash','Yalla Xash transfert international','transfer','استقبال التحويلات الدولية عبر Yalla Xash. تواصل لمعرفة الوثائق المطلوبة وشروط الاستلام والرسوم حسب العملية.','شبكات التحويل'],
+ ['worldremit','WorldRemit','WorldRemit transfert international','transfer','استفسر عن استقبال التحويلات الدولية عبر WorldRemit وإجراءات الاستلام المتاحة بالوكالة.','شبكات التحويل'],
+ ['money-exchange','Money Exchange','Money Exchange transfert international','transfer','استقبال التحويلات الدولية المرتبطة بخدمة Money Exchange. أكد تفاصيل العملية والوثائق والرسوم مع الوكالة.','شبكات التحويل']
+);
+CATEGORIES.splice(1,0,
+ {id:'domestic',slug:'domestic-transfers',title:'التحويلات الوطنية',heading:'خدمات التحويلات الوطنية',pageTitle:'إرسال واستقبال الأموال داخل المغرب',icon:'transfer',image:'transfer',intro:'تحويل الأموال داخل المغرب عبر Damane Mandat Express. تعرف على تفاصيل الإرسال والاستقبال.',note:internationalTransfers.note,topics:['خدمة التحويل الوطني المطلوبة','الوثائق ومرجع التحويل عند الاستقبال','المبلغ والرسوم قبل تأكيد العملية'],items:[mandaItem,['damane-mandat','Damane Mandat Express','Damane Mandat Express transfert national','transfer','إرسال واستقبال الأموال داخل المغرب عبر Damane Mandat Express. تواصل لتأكيد الوثائق المطلوبة والرسوم وشروط العملية.','شبكات التحويل']]},
+ {id:'wallets',slug:'account-deposits-withdrawals',title:'تعبئة وسحب الحسابات والتطبيقات',heading:'تعبئة وسحب الحسابات والتطبيقات',pageTitle:'خدمات تعبئة وسحب الحسابات والتطبيقات',icon:'phone',image:'telecom',intro:'خدمات الإيداع والتعبئة والسحب للحسابات والتطبيقات. اختر Orange Money أو inwi money أو Chari أو MDJS أو Yassir للاستفسار عن العملية المطلوبة.',note:'العمليات والرسوم والسقوف تخضع لشروط مقدم الخدمة والتحقق في الوكالة. لا تشارك كلمة السر أو رموز التأكيد عبر الموقع.',topics:['الحساب أو التطبيق ونوع العملية المطلوبة','التحقق والوثائق اللازمة في الوكالة','المبلغ والرسوم والسقف المتاح قبل العملية'],items:[
+ ['orange-money','Orange Money','Orange Money versement retrait','phone','إيداع وتعبئة وسحب الأموال من حساب Orange Money. تواصل لمعرفة شروط العملية والرسوم والسقوف المتاحة.','الحسابات والتطبيقات'],
+ ['inwi-money','inwi money','inwi money versement retrait','phone','تعبئة وسحب الأموال من حساب inwi money حسب العمليات المتاحة. أكد المعلومات المطلوبة والرسوم مع الوكالة.','الحسابات والتطبيقات'],
+ ['chari','Chari Money','Chari Money versement retrait','phone','إيداع وسحب الأموال من حساب Chari Money. استفسر عن شروط العملية والتحقق والرسوم قبل التنفيذ.','الحسابات والتطبيقات'],
+ ['mdjs','MDJS','MDJS recharge retrait compte','phone','تعبئة وسحب رصيد حساب MDJS وفق شروط مقدم الخدمة والعمليات المتاحة بالوكالة. تواصل لتأكيد المتطلبات والرسوم.','الحسابات والتطبيقات'],
+ ['yassir','Yassir','Yassir versement retrait compte','phone','إيداع وسحب الأموال المرتبطة بحساب Yassir. تواصل لتأكيد العمليات المتاحة والوثائق والرسوم.','الحسابات والتطبيقات']
+ ]}
+);
+/* Services removed at the agency owner's request. */
+for(const category of CATEGORIES)category.items=category.items.filter(item=>!['manda','yes-cash'].includes(item[0]));
+window.SERVICES=CATEGORIES.flatMap(c=>c.items.map(([key,title,titleFr,icon,description,group,logo])=>({id:c.id==='domestic'&&key==='manda'?'transfer-manda':`${c.id}-${key}`,key,category:c.id,title,titleFr,icon,description,group,logo:logo?`assets/logos/${logo}.webp`:null,image:`assets/images/categories/${c.image}.webp`,verified:false,requiredDocuments:[],verifiedSteps:[],availability:'confirm-with-agency',features:c.topics,note:c.note})));
 // Crisp local brand vectors and generated service illustrations; UI symbols stay SVG.
 const brandVectorFiles={'transfer-western-union':'westernunion','transfer-moneygram':'moneygram','gaming-playstation':'playstation','gaming-steam':'steam','gaming-roblox':'roblox','gaming-pubg':'pubg','gaming-fortnite':'fortnite','travel-emirates':'emirates','travel-qatar':'qatarairways'};
 const illustratedInsurance=['car','motorcycle','truck','travel-insurance','student','family'];
@@ -133,3 +154,12 @@ SERVICES.forEach(service=>{
  if(service.category==='insurance'&&illustratedInsurance.includes(service.key))service.illustration=`assets/illustrations/insurance/${service.key}.webp`;
 });
 window.UNVERIFIED_OFFERS={insurance:[{type:'travel',amount:325,verified:false},{type:'student-trainee',amount:50,verified:false}],finance:[5000,10000,20000].map(amount=>({amount,verified:false})),partnershipsVerified:false,exactAddressVerified:false};
+
+const paymentLogos={'yalla-xash':'webp','worldremit':'svg','money-exchange':'webp','damane-mandat':'svg','orange-money':'svg','inwi-money':'webp','chari':'webp','mdjs':'webp','yassir':'svg'};
+SERVICES.forEach(service=>{if(paymentLogos[service.key])service.logo='assets/logos/payments/'+service.key+'.'+paymentLogos[service.key];});
+
+// Updated logos selected by the agency owner.
+for(const service of SERVICES){const logos={'transfer-alyousuf':'alyousuf.svg','transfer-dirham':'dirham-express.webp','transfer-ria':'ria.svg'};if(logos[service.id])service.logo='assets/logos/payments/'+logos[service.id];}
+
+// Full-color marks selected from the supplied MoneyGram / Western Union references.
+SERVICES.forEach(service=>{const files={'transfer-moneygram':'moneygram.svg','transfer-western-union':'western-union.svg'};if(files[service.id]){delete service.brandMark;service.logo='assets/logos/payments/'+files[service.id];}});

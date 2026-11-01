@@ -4,6 +4,8 @@
   <url><loc>http://localhost:4173/about.html</loc></url>
   <url><loc>http://localhost:4173/contact.html</loc></url>
   <url><loc>http://localhost:4173/services/money-transfer.html</loc></url>
+  <url><loc>http://localhost:4173/services/domestic-transfers.html</loc></url>
+  <url><loc>http://localhost:4173/services/account-deposits-withdrawals.html</loc></url>
   <url><loc>http://localhost:4173/services/telecommunications.html</loc></url>
   <url><loc>http://localhost:4173/services/insurance.html</loc></url>
   <url><loc>http://localhost:4173/services/administration.html</loc></url>
@@ -14,13 +16,20 @@
   <url><loc>http://localhost:4173/services/details/transfer-western-union.html</loc></url>
   <url><loc>http://localhost:4173/services/details/transfer-ria.html</loc></url>
   <url><loc>http://localhost:4173/services/details/transfer-moneygram.html</loc></url>
-  <url><loc>http://localhost:4173/services/details/transfer-manda.html</loc></url>
   <url><loc>http://localhost:4173/services/details/transfer-taptap.html</loc></url>
   <url><loc>http://localhost:4173/services/details/transfer-remitly.html</loc></url>
   <url><loc>http://localhost:4173/services/details/transfer-dirham.html</loc></url>
   <url><loc>http://localhost:4173/services/details/transfer-al-ansari.html</loc></url>
-  <url><loc>http://localhost:4173/services/details/transfer-yes-cash.html</loc></url>
   <url><loc>http://localhost:4173/services/details/transfer-alyousuf.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/transfer-yalla-xash.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/transfer-worldremit.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/transfer-money-exchange.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/domestic-damane-mandat.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/wallets-orange-money.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/wallets-inwi-money.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/wallets-chari.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/wallets-mdjs.html</loc></url>
+  <url><loc>http://localhost:4173/services/details/wallets-yassir.html</loc></url>
   <url><loc>http://localhost:4173/services/details/telecom-inwi.html</loc></url>
   <url><loc>http://localhost:4173/services/details/telecom-orange.html</loc></url>
   <url><loc>http://localhost:4173/services/details/telecom-maroc-telecom.html</loc></url>
@@ -114,6 +123,8 @@
   <url><loc>http://localhost:4173/fr/about.html</loc></url>
   <url><loc>http://localhost:4173/fr/contact.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/money-transfer.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/domestic-transfers.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/account-deposits-withdrawals.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/telecommunications.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/insurance.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/administration.html</loc></url>
@@ -124,13 +135,20 @@
   <url><loc>http://localhost:4173/fr/services/details/transfer-western-union.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/transfer-ria.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/transfer-moneygram.html</loc></url>
-  <url><loc>http://localhost:4173/fr/services/details/transfer-manda.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/transfer-taptap.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/transfer-remitly.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/transfer-dirham.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/transfer-al-ansari.html</loc></url>
-  <url><loc>http://localhost:4173/fr/services/details/transfer-yes-cash.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/transfer-alyousuf.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/transfer-yalla-xash.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/transfer-worldremit.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/transfer-money-exchange.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/domestic-damane-mandat.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/wallets-orange-money.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/wallets-inwi-money.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/wallets-chari.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/wallets-mdjs.html</loc></url>
+  <url><loc>http://localhost:4173/fr/services/details/wallets-yassir.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/telecom-inwi.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/telecom-orange.html</loc></url>
   <url><loc>http://localhost:4173/fr/services/details/telecom-maroc-telecom.html</loc></url>
